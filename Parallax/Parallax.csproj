@@ -40,7 +40,6 @@
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Controls\ParallaxControl.cs" />
-    <Compile Include="Controls\AlwaysScrollView.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="Xamarin.Forms.Core">

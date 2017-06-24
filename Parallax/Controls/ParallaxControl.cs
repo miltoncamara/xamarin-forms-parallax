@@ -1,4 +1,5 @@
-﻿using System;
+﻿/** Créditos: https://github.com/xamarinhq/app-evolve **/
+using System;
 using Xamarin.Forms;
 
 namespace Parallax.Controls
