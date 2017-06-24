@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ContentPage 
+    xmlns="http://xamarin.com/schemas/2014/forms" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+    xmlns:local="clr-namespace:Parallax.Controls;assembly=Parallax"
+    x:Class="Parallax.ParallaxPage"
+    Title="Parallax Effect">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="200" x:Name="Row1Header"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Grid RowSpacing="0" ColumnSpacing="0" x:Name="HeaderView">
+            <Image
+                HorizontalOptions="FillAndExpand"
+                VerticalOptions="FillAndExpand"
+                Source="exemploparallax.jpg"
+                Aspect="AspectFill"/>
+        </Grid>
+        <local:ParallaxControl x:Name="MainScroll" Grid.RowSpan="2">
+            <Grid RowSpacing="0">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="200"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                <Grid x:Name="MainStack"
+                     VerticalOptions="End"
+                     HorizontalOptions="FillAndExpand">
+                    <StackLayout
+                         Padding="16"
+                         Spacing="0"
+                         VerticalOptions="End"
+                         HorizontalOptions="FillAndExpand">
+                        <Label
+                            Text="Efeito Parallax"
+                            FontSize="18"
+                            TextColor="White">
+                        </Label>
+                        <Label
+                            Text="Subtitulo"
+                            FontSize="12"
+                            TextColor="White"/>
+                    </StackLayout>
+                </Grid>
+                <StackLayout Grid.Row="1" Spacing="0">
+                    <StackLayout Padding="16" BackgroundColor="Silver" HeightRequest="30">
+                        <Label TextColor="Black" Text="Efeito Parallax" />
+                    </StackLayout>
+                    <StackLayout Padding="16" BackgroundColor="White">
+                        <Label Text="Efeito Parallax" />
+                        <Label Text="Efeito Parallax" />
+                        <Label Text="Efeito Parallax" />
+                        <Label Text="Efeito Parallax" />
+                        <Label Text="Efeito Parallax" />
+                        <Label Text="Efeito Parallax" />
+                        <Label Text="Efeito Parallax" />
+                        <Label Text="Efeito Parallax" />
+                        <Label Text="Efeito Parallax" />
+                        <Label Text="Efeito Parallax" />
+                        <Label Text="Efeito Parallax" />
+                        <Label Text="Efeito Parallax" />
+                        <Label Text="Efeito Parallax" />
+                        <Label Text="Efeito Parallax" />
+                        <Label Text="Efeito Parallax" />
+                        <Label Text="Efeito Parallax" />
+                        <Label Text="Efeito Parallax" />
+                        <Label Text="Efeito Parallax" />
+                        <Label Text="Efeito Parallax" />
+                        <Label Text="Efeito Parallax" />
+                    </StackLayout>
+                    <StackLayout Padding="16"  BackgroundColor="Silver" HeightRequest="30">
+                        <Label TextColor="Black" Text="Efeito Parallax" />
+                    </StackLayout>
+                    <StackLayout Padding="16" BackgroundColor="White">
+                        <Label Text="Efeito Parallax" />
+                        <Label Text="Efeito Parallax" />
+                        <Label Text="Efeito Parallax" />
+                        <Label Text="Efeito Parallax" />
+                        <Label Text="Efeito Parallax" />
+                        <Label Text="Efeito Parallax" />
+                        <Label Text="Efeito Parallax" />
+                        <Label Text="Efeito Parallax" />
+                        <Label Text="Efeito Parallax" />
+                        <Label Text="Efeito Parallax" />
+                        <Label Text="Efeito Parallax" />
+                        <Label Text="Efeito Parallax" />
+                        <Label Text="Efeito Parallax" />
+                        <Label Text="Efeito Parallax" />
+                        <Label Text="Efeito Parallax" />
+                        <Label Text="Efeito Parallax" />
+                        <Label Text="Efeito Parallax" />
+                        <Label Text="Efeito Parallax" />
+                        <Label Text="Efeito Parallax" />
+                        <Label Text="Efeito Parallax" />
+                    </StackLayout>                    
+                </StackLayout>
+            </Grid>
+        </local:ParallaxControl>
+    </Grid>    
+</ContentPage>
